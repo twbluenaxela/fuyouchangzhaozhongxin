@@ -1,0 +1,163 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "useRootPaddingAwareAlignments": true,
+    "color": {
+      "palette": [
+        {
+          "slug": "primary",
+          "color": "#3d5a2a",
+          "name": "Primary Green"
+        },
+        {
+          "slug": "primary-dark",
+          "color": "#2c4220",
+          "name": "Primary Dark Green"
+        },
+        {
+          "slug": "primary-light",
+          "color": "#5a7a3f",
+          "name": "Primary Light Green"
+        },
+        {
+          "slug": "accent",
+          "color": "#8b7355",
+          "name": "Accent Brown"
+        },
+        {
+          "slug": "background",
+          "color": "#f7f3ec",
+          "name": "Background Cream"
+        },
+        {
+          "slug": "surface",
+          "color": "#ffffff",
+          "name": "Surface White"
+        },
+        {
+          "slug": "text-primary",
+          "color": "#2a2a2a",
+          "name": "Text Primary"
+        },
+        {
+          "slug": "text-secondary",
+          "color": "#666666",
+          "name": "Text Secondary"
+        },
+        {
+          "slug": "border",
+          "color": "#e0d8cc",
+          "name": "Border"
+        }
+      ],
+      "defaultPalette": false,
+      "defaultGradients": false,
+      "customGradient": true
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "slug": "noto-sans-tc",
+          "name": "Noto Sans TC",
+          "fontFamily": "'Noto Sans TC', 'Microsoft JhengHei', sans-serif"
+        }
+      ],
+      "fontSizes": [
+        { "slug": "small",   "size": "0.875rem", "name": "Small"   },
+        { "slug": "medium",  "size": "1rem",     "name": "Medium"  },
+        { "slug": "large",   "size": "1.125rem", "name": "Large"   },
+        { "slug": "x-large", "size": "1.5rem",   "name": "X-Large" },
+        { "slug": "xx-large","size": "2rem",     "name": "XX-Large"},
+        { "slug": "huge",    "size": "2.5rem",   "name": "Huge"    }
+      ],
+      "defaultFontSizes": false,
+      "customFontSize": true
+    },
+    "spacing": {
+      "spacingScale": {
+        "steps": 0
+      },
+      "spacingSizes": [
+        { "slug": "10", "size": "0.5rem",  "name": "XS"  },
+        { "slug": "20", "size": "1rem",    "name": "S"   },
+        { "slug": "30", "size": "1.5rem",  "name": "M"   },
+        { "slug": "40", "size": "2rem",    "name": "L"   },
+        { "slug": "50", "size": "3rem",    "name": "XL"  },
+        { "slug": "60", "size": "4rem",    "name": "XXL" },
+        { "slug": "70", "size": "6rem",    "name": "3XL" }
+      ],
+      "defaultSpacingSizes": false,
+      "units": ["px", "%", "em", "rem", "vw", "vh"]
+    },
+    "layout": {
+      "contentSize": "1200px",
+      "wideSize": "1400px"
+    },
+    "border": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true
+    },
+    "shadow": {
+      "defaultPresets": false,
+      "presets": [
+        {
+          "slug": "card",
+          "shadow": "0 2px 12px rgba(0,0,0,0.08)",
+          "name": "Card Shadow"
+        },
+        {
+          "slug": "card-hover",
+          "shadow": "0 4px 20px rgba(0,0,0,0.12)",
+          "name": "Card Hover Shadow"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var(--wp--preset--color--background)",
+      "text": "var(--wp--preset--color--text-primary)"
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--noto-sans-tc)",
+      "fontSize": "var(--wp--preset--font-size--medium)",
+      "lineHeight": "1.7"
+    },
+    "spacing": {
+      "blockGap": "var(--wp--preset--spacing--30)"
+    },
+    "elements": {
+      "link": {
+        "color": { "text": "var(--wp--preset--color--primary)" },
+        ":hover": {
+          "color": { "text": "var(--wp--preset--color--primary-dark)" }
+        }
+      },
+      "h1": {
+        "typography": { "fontSize": "var(--wp--preset--font-size--huge)", "fontWeight": "700", "lineHeight": "1.3" }
+      },
+      "h2": {
+        "typography": { "fontSize": "var(--wp--preset--font-size--xx-large)", "fontWeight": "700", "lineHeight": "1.3" }
+      },
+      "h3": {
+        "typography": { "fontSize": "var(--wp--preset--font-size--x-large)", "fontWeight": "600", "lineHeight": "1.4" }
+      },
+      "h4": {
+        "typography": { "fontSize": "var(--wp--preset--font-size--large)", "fontWeight": "600" }
+      },
+      "button": {
+        "border": { "radius": "6px" },
+        "typography": { "fontWeight": "500", "fontSize": "var(--wp--preset--font-size--medium)" },
+        "spacing": { "padding": { "top": "0.75rem", "bottom": "0.75rem", "left": "1.75rem", "right": "1.75rem" } }
+      }
+    }
+  },
+  "templateParts": [
+    { "name": "header", "title": "Header", "area": "header" },
+    { "name": "footer", "title": "Footer", "area": "footer" }
+  ]
+}
