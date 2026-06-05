@@ -115,19 +115,17 @@ function fuyou_create_pages_and_nav() {
 		}
 	}
 
-	// Build navigation block content.
+	// Build navigation block content — all items flat so mobile overlay is clean.
 	$nav_content =
 		'<!-- wp:navigation-link {"label":"中心介紹","url":"/center-intro","kind":"custom"} /-->' .
 		'<!-- wp:navigation-link {"label":"服務項目","url":"/services","kind":"custom"} /-->' .
 		'<!-- wp:navigation-link {"label":"收費標準","url":"/pricing","kind":"custom"} /-->' .
+		'<!-- wp:navigation-link {"label":"入住說明","url":"/admission","kind":"custom"} /-->' .
 		'<!-- wp:navigation-link {"label":"交通資訊","url":"/directions","kind":"custom"} /-->' .
 		'<!-- wp:navigation-link {"label":"聯絡我們","url":"/contact","kind":"custom"} /-->' .
-		'<!-- wp:navigation-submenu {"label":"更多","kind":"custom","url":"#","type":"custom"} -->' .
-		'<!-- wp:navigation-link {"label":"入住說明","url":"/admission","kind":"custom"} /-->' .
 		'<!-- wp:navigation-link {"label":"性騷擾防治申訴","url":"/harassment-policy","kind":"custom"} /-->' .
 		'<!-- wp:navigation-link {"label":"人才招募","url":"/careers","kind":"custom"} /-->' .
-		'<!-- wp:navigation-link {"label":"志工資訊","url":"/volunteer","kind":"custom"} /-->' .
-		'<!-- /wp:navigation-submenu -->';
+		'<!-- wp:navigation-link {"label":"志工資訊","url":"/volunteer","kind":"custom"} /-->';
 
 	// Delete all existing nav posts, then create a clean one.
 	$existing = get_posts( [ 'post_type' => 'wp_navigation', 'posts_per_page' => -1, 'post_status' => 'any' ] );
