@@ -452,7 +452,10 @@ a.svc-card:hover, .svc-card:hover {
 /* ---------- Bottom Navigation ---------- */
 
 /* ---------- Footer ---------- */
-.site-footer { width: 100%; }
+.site-footer { width: 100%; padding-left: 1.25rem; padding-right: 1.25rem; }
+@media (min-width: 768px) {
+  .site-footer { padding-left: 2rem; padding-right: 2rem; }
+}
 
 .footer-top {
   display: flex;

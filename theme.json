@@ -130,6 +130,12 @@
     "spacing": {
       "blockGap": "var(--wp--preset--spacing--30)"
     },
+    "blocks": {
+      "core/paragraph": {
+        "color": { "text": "#5a5a52" },
+        "typography": { "fontSize": "0.95rem", "lineHeight": "1.85" }
+      }
+    },
     "elements": {
       "link": {
         "color": { "text": "var(--wp--preset--color--primary)" },
